@@ -3,21 +3,22 @@
  * @return { increment: Function, decrement: Function, reset: Function }
  */
 var createCounter = function(init) {
-    let p = init;
+    let currentValue = init;
+
     return {
         increment: function() {
-            p = p + 1;
-            return ( p )
+            currentValue += 1;
+            return currentValue;
         },
         decrement: function() {
-            p = p - 1
-            return ( p )
+            currentValue -= 1;
+            return currentValue;
         },
         reset: function() {
-            p = init
-            return ( p )
+            currentValue = init;
+            return currentValue;
         }
-     }
+    }
 };
 
 /**
