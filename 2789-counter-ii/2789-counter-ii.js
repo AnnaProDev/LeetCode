@@ -8,12 +8,10 @@ var createCounter = function(init) {
         increment: function() {
             p = p + 1;
             return ( p )
-            init = p
         },
         decrement: function() {
             p = p - 1
             return ( p )
-            init = p
         },
         reset: function() {
             p = init
